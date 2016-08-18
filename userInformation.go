@@ -1,9 +1,11 @@
 package gokani
 
+// UserInformationContainer wraps an instance of UserInformation
 type UserInformationContainer struct {
 	UserInformation UserInformation `json:"user_information"`
 }
 
+// UserInformation holds User-specific information
 type UserInformation struct {
 	Username     string `json:"username"`
 	Gravatar     string `json:"gravatar"`
@@ -18,6 +20,7 @@ type UserInformation struct {
 	VacationDate int    `json:"vacation_date"`
 }
 
+// UserInformation returns a UserInformation struct
 func (c Client) UserInformation() (*UserInformation, error) {
 	v := UserInformationContainer{}
 	url := APIURL + "/user/" + c.Key + "/user-information"

@@ -7,16 +7,19 @@ import (
 	"net/http"
 )
 
+// APIURL is the base url of wanikani
 const (
 	APIURL = "https://www.wanikani.com/api"
 )
 
+// Client holds the API private key and performs the calls to the wanikani API
 type Client struct {
 	Key string
 }
 
 var httpClient = &http.Client{}
 
+// Call performs the calls to the different endpoints
 func Call(method, url string, v interface{}) error {
 	r, err := http.NewRequest(method, url, nil)
 	if err != nil {
