@@ -1,3 +1,17 @@
+Wanikani API wrapper written in Go.
+
+Endpoints available: 
+
+- [x] UserInformation
+- [x] StudyQueue
+- [x] LevelProgression
+- [x] SRSDistribution
+- [ ] RecentUnlocksList
+- [ ] CriticalItemsList
+- [ ] RadicalsList
+- [ ] KanjiList
+- [ ] VocabularyList
+
 # Example
 
 ``` go
