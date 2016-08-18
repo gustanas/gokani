@@ -1,3 +1,5 @@
+# Gokani
+
 Wanikani API wrapper written in Go.
 
 Endpoints available: 
