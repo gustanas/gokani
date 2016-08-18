@@ -1,4 +1,4 @@
-# Gokani
+# Gokani (Work in Progress)
 
 [Wanikani](https://www.wanikani.com/) API wrapper written in Go.
 
