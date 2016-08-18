@@ -1,6 +1,6 @@
 # Gokani
 
-Wanikani API wrapper written in Go.
+[Wanikani](https://www.wanikani.com/) API wrapper written in Go.
 
 Endpoints available: 
 
