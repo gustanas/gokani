@@ -1,7 +1,5 @@
 package gokani
 
-import "fmt"
-
 // RadicalsListContainer wraps instances of Items
 type RadicalsListContainer struct {
 	RadicalsList Items `json:"requested_information"`
@@ -25,7 +23,7 @@ func (c Client) RadicalsList(percentage []string) (Items, error) {
 			url += ","
 		}
 	}
-	fmt.Println(url)
+
 	e := Call("GET", url, &v)
 	if e != nil {
 		return nil, e
