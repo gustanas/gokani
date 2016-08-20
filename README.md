@@ -4,15 +4,15 @@
 
 Endpoints available: 
 
-- [x] UserInformation
-- [x] StudyQueue
-- [x] LevelProgression
-- [x] SRSDistribution
-- [ ] RecentUnlocksList
-- [ ] CriticalItemsList
-- [ ] RadicalsList
-- [ ] KanjiList
-- [ ] VocabularyList
+- UserInformation
+- StudyQueue
+- LevelProgression
+- SRSDistribution
+- RecentUnlocksList
+- CriticalItemsList
+- RadicalsList
+- KanjiList
+- VocabularyList
 
 # Example
 
