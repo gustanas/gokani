@@ -4,15 +4,15 @@
 
 Endpoints available: 
 
-- [x] UserInformation
-- [x] StudyQueue
-- [x] LevelProgression
-- [x] SRSDistribution
-- [ ] RecentUnlocksList
-- [ ] CriticalItemsList
-- [ ] RadicalsList
-- [ ] KanjiList
-- [ ] VocabularyList
+- UserInformation
+- StudyQueue
+- LevelProgression
+- SRSDistribution
+- RecentUnlocksList
+- CriticalItemsList
+- RadicalsList
+- KanjiList
+- VocabularyList
 
 # Example
 
@@ -27,7 +27,12 @@ import (
 func main() {
 	c := gokani.Client{Key: "MY_API_KEY"}
 
-	fmt.Println(c.UserInformation())
-	fmt.Println(c.StudyQueue())
+	levels := []string{"1", "2"}
+	v, e := c.KanjiList(levels)
+
+	if e != nil {
+		// handle error
+	}
+	fmt.Println(v[0].Kunyomi)
 }
 ```
