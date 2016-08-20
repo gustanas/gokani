@@ -8,14 +8,12 @@ type CriticalItemsListContainer struct {
 }
 
 /*
-CriticalItemsList returns a list of CriticalItemsList
-List of critical items ordered by ascending percentage.
-Optional Arguments
-Declaring a maximum percentage is available, as seen in the example as 95.
-All items with a percentage correct less than the declared argument will return.
-The percentage can be a minimum of 0 and a maximum of 100.
-If the percentage argument is not specified or outside the range, a default of
-75 will be used.
+CriticalItemsList returns a list of CriticalItemsList ordered by ascending percentage
+Optional Arguments:
+Declaring a maximum percentage is available. All items with a percentage
+correct less than the declared argument will return. The percentage can be a
+minimum of 0 and a maximum of 100. If the percentage argument is not specified
+or outside the range, a default of 75 will be used.
 */
 func (c Client) CriticalItemsList(percentage string) (Items, error) {
 	v := CriticalItemsListContainer{}
