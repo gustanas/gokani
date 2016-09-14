@@ -36,3 +36,8 @@ func main() {
 	fmt.Println(v[0].Kunyomi)
 }
 ```
+
+
+Twitter: [@gusta_nas](https://twitter.com/gusta_nas)
+
+Website: [gustanas.co](http://www.gustanas.co/)
